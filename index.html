@@ -8,16 +8,19 @@
     <title>Pousada Secreta</title>
 </head>
 <body>    
-    <div id="Topo">
-        <div class="pousada">
-           <a href="#">Pousada <span>Secreta</span></a>
-        </div>
-        <div class ="links">
-            <a href="#sobre">SOBRE</a>
-            <a href="#rota">ROTA</a>
-            <a href="#imagem">QUARTOS</a>
-        </div>       
-    </div>
+    <header>                              <!--Barra de Navegação-->
+        <a id="logo" href="#">Pousada <span>Secreta</span> </a>
+        <nav id="nav">
+          <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">Menu
+            <span id="hamburger"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#imagem">QUARTOS</a></li>
+            <li><a href="#rota">ROTA</a></li>
+            <li><a href="#sobre">SOBRE</a></li>                                        
+          </ul>
+        </nav>
+      </header>
 
     <div id="Conteudo">
         <div class="fundoPraia">
@@ -107,32 +110,15 @@
     </div>
 
     <div id="rodape">
-        <div id="inf">
-            <div>
-                <h4>Entre em contato conosco:</h4>
-            </div>
-
-            <a href="#">            
-                <P>Endereço Av. 123, 22 - Rio de Janeiro RJ</P>            
-            </a>
-
-            <div>               
-                <P>Cel: 2345678</P>
-            </div>
-
-            <a target="_blank" href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&">
-                <p>Faça sua reserva pelo Booking.com</p>            
-            </a>
+        <div class="inf">
+            <p>Entre em contato conosco:</p>
+            <a href="#">Endereço Av. 123,22 - Rio de Janeiro RJ</a>        
+            <p>Cel:2345678</p>
+            <a target="_blank" href="https://www.booking.com/searchresults.pt-br.html?aid=375635;label=msn-wLZ0m4wRNI00wFHQAaaO3w-79920787059858%3Atikwd-79920803013016%3Aaud-808219487%3Aloc-20%3Aneo%3Amte%3Adec%3Aqsbooking;sid=9ca5cbe6c9db71b34b98c0738ea780f4;dest_id=-666610;dest_type=city&">Faça sua reserva pelo Booking.com</a>
         </div>
-
-
-        <hr>
-
-
-            <div id="copy">
-                Copyright - PousadaDev
-            </div>
-        
+        <p class="copy">Copyright - PousadaDev</p>
     </div>    
+
+    <script src="js.js"></script>
 </body>
 </html>
